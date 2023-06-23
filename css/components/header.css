@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+#header-wrapper {
+  box-shadow: rgba(50, 50, 70, 0.1) 0 10px 20px -2px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 12px auto 80px auto;
+}
+
+/* 멤버 영역 */
+.member {
+  display: flex;
+  justify-content: flex-end;
+  order: -1;
+  margin-bottom: 21px;
+}
+
+.member__item {
+  display: flex;
+  align-items: center;
+}
+
+.member__item a {
+  margin: 0 10px;
+}
+
+.member__item:nth-child(-n + 2)::after {
+  content: "";
+  height: 12px;
+  border-right: 1px solid var(--desingBar-color);
+}
+
+/* 로고, 검색창, 서브메뉴바 컨테이너 */
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* 로고 영역 */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box__title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box__market,
+.logo-box__beauty {
+  font-size: 21.33px;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+.logo-box__market {
+  color: var(--primary-color);
+}
+
+.logo-box__beauty {
+  color: var(--gray-color);
+}
+
+.logo-box__beauty:hover {
+  color: var(--primary-color);
+}
+
+.logo-box__beauty-wrapper {
+  position: relative;
+}
+
+.logo-box__beauty::after {
+  content: "";
+  background-image: url(../../imgs/header/Vector.png);
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.logo-box__title::after {
+  content: "";
+  background-color: tomato;
+  height: 14px;
+  border-right: 1px solid var(--desingBar-color);
+}
+
+/* 검색창(서치바) 영역 */
+.search-form__box {
+  margin-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 21px;
+  padding-right: 5px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.search-form__input {
+  border: none;
+  width: 200px;
+  height: 34px;
+}
+
+.search-form__input:focus {
+  border: none;
+}
+
+.search-form__button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 서브메뉴 영역 */
+.sub-menu__item {
+  margin: 0 8px;
+}
+
+/* 메뉴(네비게이션) 영역 */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600px;
+  margin: 20px 0;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.category img {
+  margin-right: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+/* 샛별택배 박스 영역 */
+.menu__post {
+  width: 132px;
+  height: 32px;
+  border: 1px solid var(--postBox-color);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.menu__post span:first-child {
+  color: var(--primary-color);
+  font-weight: 600;
+}
