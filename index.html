@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Karly</title>
-</head>
-<body>
     
+    <title>Market Karly</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">
+        <a href="#" class="logo__link">
+            <img src="./imgs/header/logo.png" alt="마켓칼리 로고" />
+        </a>
+        <ul class="switch">
+            <li>
+                <a href="#" class="switch__market">마켓칼리</a>
+                <span class="divider">|</span>
+            </li>
+            <li>
+                <a href="#" class="switch__beauty">뷰티칼리</a>
+                <img src="./imgs/header/Vector.png" alt="" />
+            </li>
+        </ul>
+    </h1>
+    <ul class="member">
+        <li>
+            <a href="#" class="member__join">회원가입</a>
+            <span class="divider">|</span>
+        </li>
+        <li>
+            <a href="#">로그인</a>
+            <span class="divider">|</span>
+        </li>
+        <li>
+            <a href="#">고객센터</a>
+        </li>
+    </ul>
+    <ul class="member-only">
+        <li class="member-only__list">
+            <a href="#" class="member-only__link">
+                <img src="./imgs/header/Location.png" alt="지도" />
+            </a>
+        </li>
+        <li class="member-only__list">
+            <a href="#" class="member-only__link">
+                <img src="./imgs/header/Heart.png" alt="찜한 상품" />
+            </a>
+        </li>
+        <li class="member-only__list">
+            <a href="#" class="member-only__link">
+                <img src="./imgs/header/Cart-1.png" alt="장바구니" />
+            </a>
+        </li>
+    </ul>
+    <form action="search" class="search-form">
+        <fieldset>
+            <legend>검색 폼</legend>
+            <div class="form-input">
+                <label for="search" class="form-input__label"></label>
+                <input type="text" class="form-input__input" required />
+            </div>
+            <button type="button" class="form-input__button"></button>
+        </fieldset>
+    </form>
+   <div class=""></div> 
+    <div class="category">
+        <a href="#">
+            <img src="./imgs/header/hanburger_black.png" alt="" />
+        </a>
+        <span class="category__text">카테고리</span>
+    </div>
+    <ul class="menu">
+        <li><a href="#">신상품</a></li>
+        <li><a href="#">베스트</a></li>
+        <li><a href="#">알뜰쇼핑</a></li>
+        <li><a href="#">특가/혜택</a></li>
+    </ul>
+    <div class="info">
+        <a href="#">
+            <img src="./imgs/header/header_notice.png" alt="" />
+        </a>
+    </div>
+</header>
+
+
 </body>
 </html>
