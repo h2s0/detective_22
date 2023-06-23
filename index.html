@@ -8,57 +8,60 @@
 <body>
     <header class="header">
 
-        <ul class="member_only">
-            <li><a href="/" aria-hidden="true">회원가입</a></li>
-            <li><a href="/" aria-hidden="true">로그인</a></li>
-            <li><a href="/" aria-hidden="true">고객센터</a></li>
-        </ul>
-        
-        <div class="mainbox">
-            <div class="logobox">
-                <h1 class="logobox__logo">
-                    <a href="/" class="logo_link" aria-label="Karly"></a>
+        <div class="top-container">
+            <div class="logo-box">
+                <h1 class="logo-box__logo">
+                    <img src="./imgs/header/logo.png" alt="마켓칼리 로고" />
+                    <!-- 접근성 태그 추가 필요 -->
+                    <a href="/" class="logo-box__market">마켓칼리</a>
                 </h1>
-                <span class="logobox__beauty" aria-hidden="true">ㅣ</span><a href="/">뷰티컬리</a>
+                <!-- 가상요소 | 추가 필요 / HTML 마크업, CSS 가상요소 뭐가 더 좋을지? -->
+                <a href="/" class="logo-box__beauty">뷰티칼리</a>
             </div>
-    
 
-            
-            <form action="" method="POST" class="search_form">
+            <form action="#" method="get" class="search-form">
                 <fieldset>
-                    <legend class="a11y-hidden">검색폼</legend>
-                    <div class="form_input">
-                        <label for="search" class="a11y-hidden form_input__label">검색어</label>
+                    <legend>검색폼</legend>
+                    <div class="search-form__box">
+                        <label for="search" class="a11y-hidden search-form__label">검색어</label>
                         <input type="search" id="search" name="search" required
-                        class="formInput__input" placeholder="검색어를 입력하세요.">
+                        class="search-form__input" placeholder="검색어를 입력하세요.">
                     </div>
-                    <button type="submit" class="button"></button>
+                    <button type="submit" class="serach-form__button"></button>
                 </fieldset>
             </form>
             
-            <div class="linkbox">
-                <a href="/" class="linkbox__map" aria-label="지도맵 열기"></a>
-                <a href="/" lass="linkbox__like" aria-label="좋아요 리스트 열기"></a>
-                <a href="/" lass="linkbox__wish" aria-label="장바구니 메뉴 열기"></a>
+            <div class="sub-menu">
+                <a href="/" class="sub-menu__map sub-menu__item" aria-label="지도맵 열기"></a>
+                <a href="/" class="sub-menu__like sub-menu__item" aria-label="좋아요 리스트 열기"></a>
+                <a href="/" class="sub-menu__wish sub-menu__item" aria-label="장바구니 메뉴 열기"></a>
             </div>
 
         </div>
 
-        <div class="menubox">
-            <a href="/">카테고리</a>
-            <div>
-                <ul class="menubox__center">
-                    <li><a href="/">신상품</a></li>
-                    <li><a href="/">베스트</a></li>
-                    <li><a href="/">알뜰쇼핑</a></li>
-                    <li><a href="/">특가/혜택</a></li>
-                </ul>
+        <ul class="member">
+            <!-- 가상요소 | 추가 필요 -->
+            <li class="member__item"><a href="/">회원가입</a></li>
+            <li class="member__item"><a href="/">로그인</a></li>
+            <li class="member__item"><a href="/">고객센터</a></li>
+        </ul>
+
+        <div class="menu-container">
+            <div class="category">
+                <img src="./imgs/header/hanburger_black.png" alt="카테고리 펼치기" />
+                <span class="category__text">카테고리</span>
             </div>
-            <a href=""><span class="menubox_accent">샛별낮</span>배송안내</a>
+            <ul class="menu">
+                    <li class="menu__item"><a href="/">신상품</a></li>
+                    <li class="menu__item"><a href="/">베스트</a></li>
+                    <li class="menu__item"><a href="/">알뜰쇼핑</a></li>
+                    <li class="menu__item"><a href="/">특가/혜택</a></li>
+            </ul>
+            <a href="#">
+                <img src="./imgs/header/header_notice.png" alt="샛별·낮 배송안내" />
+            </a>
 
         </div>
-        
-
     </header>
 
     
