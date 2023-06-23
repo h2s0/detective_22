@@ -7,6 +7,13 @@
 </head>
 <body>
     <header class="header">
+
+        <ul class="member_only">
+            <li><a href="/" aria-hidden="true">회원가입</a></li>
+            <li><a href="/" aria-hidden="true">로그인</a></li>
+            <li><a href="/" aria-hidden="true">고객센터</a></li>
+        </ul>
+        
         <div class="mainbox">
             <div class="logobox">
                 <h1 class="logobox__logo">
@@ -15,18 +22,13 @@
                 <span class="logobox__beauty" aria-hidden="true">ㅣ</span><a href="/">뷰티컬리</a>
             </div>
     
-            <ul class="member_only">
-                <li><a href="/" aria-hidden="true">회원가입</a></li>
-                <li><a href="/" aria-hidden="true">로그인</a></li>
-                <li><a href="/" aria-hidden="true">고객센터</a></li>
-            </ul>
 
             
             <form action="" method="POST" class="search_form">
                 <fieldset>
-                    <legend>검색폼</legend>
+                    <legend class="a11y-hidden">검색폼</legend>
                     <div class="form_input">
-                        <label for="search" class="a11y_hidden form_input__label">검색어</label>
+                        <label for="search" class="a11y-hidden form_input__label">검색어</label>
                         <input type="search" id="search" name="search" required
                         class="formInput__input" placeholder="검색어를 입력하세요.">
                     </div>
@@ -46,10 +48,10 @@
             <a href="/">카테고리</a>
             <div>
                 <ul class="menubox__center">
-                    <li><a href=""></a>신상품</li>
-                    <li><a href=""></a>베스트</li>
-                    <li><a href=""></a>알뜰쇼핑</li>
-                    <li><a href="">특가/혜택</a></li>
+                    <li><a href="/">신상품</a></li>
+                    <li><a href="/">베스트</a></li>
+                    <li><a href="/">알뜰쇼핑</a></li>
+                    <li><a href="/">특가/혜택</a></li>
                 </ul>
             </div>
             <a href=""><span class="menubox_accent">샛별낮</span>배송안내</a>
