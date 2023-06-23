@@ -7,12 +7,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="">
-            <div>
-                <h1 class="logo">
+        <div class="mainbox">
+            <div class="logobox">
+                <h1 class="logobox__logo">
                     <a href="/" class="logo_link" aria-label="Karly"></a>
                 </h1>
-                <span class="beauty" aria-hidden="true">ㅣ</span><a href="/">뷰티컬리</a>
+                <span class="logobox__beauty" aria-hidden="true">ㅣ</span><a href="/">뷰티컬리</a>
             </div>
     
             <ul class="member_only">
@@ -21,20 +21,41 @@
                 <li><a href="/" aria-hidden="true">고객센터</a></li>
             </ul>
 
+            
+            <form action="" method="POST" class="search_form">
+                <fieldset>
+                    <legend>검색폼</legend>
+                    <div class="form_input">
+                        <label for="search" class="a11y_hidden form_input__label">검색어</label>
+                        <input type="search" id="search" name="search" required
+                        class="formInput__input" placeholder="검색어를 입력하세요.">
+                    </div>
+                    <button type="submit" class="button"></button>
+                </fieldset>
+            </form>
+            
+            <div class="linkbox">
+                <a href="/" class="linkbox__map" aria-label="지도맵 열기"></a>
+                <a href="/" lass="linkbox__like" aria-label="좋아요 리스트 열기"></a>
+                <a href="/" lass="linkbox__wish" aria-label="장바구니 메뉴 열기"></a>
+            </div>
+
+        </div>
+
+        <div class="menubox">
+            <a href="/">카테고리</a>
+            <div>
+                <ul class="menubox__center">
+                    <li><a href=""></a>신상품</li>
+                    <li><a href=""></a>베스트</li>
+                    <li><a href=""></a>알뜰쇼핑</li>
+                    <li><a href="">특가/혜택</a></li>
+                </ul>
+            </div>
+            <a href=""><span class="menubox_accent">샛별낮</span>배송안내</a>
 
         </div>
         
-        <form action="" method="POST" class="search_form">
-            <fieldset>
-                <legend>검색폼</legend>
-                <div class="form_input">
-                    <label for="search" class="a11y_hidden form_input__label">검색어</label>
-                    <input type="search" id="search" name="search" required
-                    class="formInput__input" placeholder="검색어를 입력하세요.">
-                </div>
-                <button type="submit" class="button"></button>
-            </fieldset>
-        </form>
 
     </header>
 
