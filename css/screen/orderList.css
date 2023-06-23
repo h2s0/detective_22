@@ -30,12 +30,23 @@ body {
 }
 
 /* 주문내역 영역 */
-/* .basket {
-} */
+.basket {
+  margin-right: 20px;
+}
 
 .basket__item {
   width: 742px;
   height: 62px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.basket__item:nth-child(n + 2):nth-child(-n + 4) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .basket__item:nth-child(n + 2):nth-child(-n + 4) span {
@@ -67,6 +78,14 @@ body {
   display: inline-block;
   width: 35px;
   height: 35px;
+}
+
+.basket__item:nth-child(n + 2):nth-child(-n + 4) button {
+  background: url(../../imgs/Icon/item_arrow.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 /* 배송지 주소 영역 */
