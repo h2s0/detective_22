@@ -1,3 +1,5 @@
+@import url(./variables.css);
+
 /**** base css ****/
 @import url(./base/reset.css);
 @import url(./base/base.css);
@@ -7,5 +9,5 @@
 /* components css */
 @import url(./components/header.css);
 
-@import url(./variables.css);
-@import url(orderList.css);
+/* screen css */
+@import url(./screen/orderList.css);

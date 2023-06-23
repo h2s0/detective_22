@@ -2,10 +2,19 @@
   /* 주요 색상 */
   --primary-color: #5f0080;
   --gray-color: #898989;
+  --white-color: #fff;
+
+  /* 주요 폰트크기 */
+  --primary-font: 21.33px;
 
   /* 가상요소 바 디자인 */
   --desingBar-color: #d9d9d9;
 
-  /* 샛별택배 박스 디자인 */
+  /* 박스 디자인 */
   --postBox-color: #a6a6a6;
+  --cashBox-color: #e1e1e1;
+
+  /* 공통 마진 & 패딩 */
+  --commonCash-margin: 12px;
+  --commonCash-padding: 20px;
 }
