@@ -1,3 +1,33 @@
 :root {
-    
-}
+    --white: #fff;
+    --black: #000;
+    --content: #333;
+    --gray400: #898989;
+    --gray50: #f9f9f9;
+    --purple: #5f0080;
+    --light-purple: #bd76ff;
+    --orange: #fa622f;
+    --red: #f03f40;
+  
+    --primary-color: var(--purple);
+    --secondary-color: var(--light-purple);
+    --new-color: var(--orange);
+    --error-color: var(--red);
+  
+    --spacing-xs: 0.5rem; /* 8px */
+    --spacing-sm: 0.75rem; /* 12px */
+    --spacing-base: 1rem; /* 16px */
+    --spacing-md: 1.25rem; /* 20px */
+    --spacing-lg: 1.5rem; /* 24px */
+    --spacing-xl: 2rem; /* 32px */
+  
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-md: 1.125rem; /* 18px */
+    --text-lg: 1.25rem; /* 20px */
+    --text-xl: 1.5rem; /* 24px */
+  
+    --container-width: 64rem; /* 1024px */
+  }
+  
