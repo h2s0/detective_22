@@ -14,7 +14,7 @@ body {
 }
 
 .order-title {
-  font-size: var(--primary-font);
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -40,13 +40,13 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 2px solid black;
+  padding: 0 5px;
 }
 
 .basket__item:nth-child(n + 2):nth-child(-n + 4) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5px;
 }
 
 .basket__item:nth-child(n + 2):nth-child(-n + 4) span {
