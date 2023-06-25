@@ -1,4 +1,75 @@
 @import url(./css/a11y.css);
-@import url(./base);
-@import url(./reset);
-@import url(./normalize);
+@import url(./css/base.css);
+@import url(./css/reset.css);
+@import url(./css/normalize.css);
+@import url(./css/theme.css);
+
+
+.body{
+    
+}
+
+.accent-primary{
+    color: var(--primary-color);
+}
+
+.footer{
+    width: var(--container-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding: var(--spacing-base);
+}
+
+.footer-top{
+    display: flex;
+}
+
+.footer-top__left, .footer-top__right{
+    width: 512px;
+}
+
+.center-title{
+    font-size: var(--text-lg);
+    font-weight: 500;
+}
+
+.opening__number{
+    font-size: var(--text-xl);
+    font-weight: bold;
+}
+
+.quest__button{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 40px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.address{
+    font-style: normal;
+}
+
+.sns{
+    display: flex;
+}
+
+.sns li{
+    margin: 0 15px;
+}
+
+.footer-certification{
+    display: flex;
+}
+
+.footer-rights{
+    background: var(gray50);
+    text-align: center;
+    color: var(gray400);
+}
