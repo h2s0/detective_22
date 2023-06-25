@@ -4,74 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./market.css" />
-    <title>Market Karly</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Karly</title>
   </head>
-
   <body>
-    <header>
-      <div class="top">
-        <div class="sub">
-          <li class="sub__menu"><a href="">회원가입</a></li>
-          <li class="sub__menu"><a href="">로그인</a></li>
-          <li class="sub__menu"><a href="">고객센터</a></li>
+    <header class="header">
+      <div class="top-container">
+        <div class="logo-box">
+          <h1 class="logo-box__logo">
+            <img src="./imgs/header/logo.png" alt="마켓칼리 로고" />
+            <!-- 접근성 태그 추가 필요 -->
+            <a href="/" class="logo-box__market">마켓칼리</a>
+          </h1>
+          <!-- 가상요소 | 추가 필요 / HTML 마크업, CSS 가상요소 뭐가 더 좋을지? -->
+          <a href="/" class="logo-box__beauty">뷰티칼리</a>
         </div>
 
-        <div class="middle">
-          <div class="logo">
-            <a href=""
-              ><img src="./imgs/header/logo.png" alt="마켓칼리 로고"
-            /></a>
-            <span class=""><a href="">마켓칼리</a></span>
-            <span class=""><a href="">뷰티칼리</a></span>
-            <a href=""
-              ><img src="./imgs/header/Vector.png" alt="새로운 뷰티칼리"
-            /></a>
-          </div>
+        <form action="#" method="get" class="search-form">
+          <fieldset>
+            <legend>검색폼</legend>
+            <div class="search-form__box">
+              <label for="search" class="a11y-hidden search-form__label"
+                >검색어</label
+              >
+              <input
+                type="search"
+                id="search"
+                name="search"
+                required
+                class="search-form__input"
+                placeholder="검색어를 입력하세요."
+              />
+            </div>
+            <button type="submit" class="serach-form__button"></button>
+          </fieldset>
+        </form>
 
-          <input
-            type="text"
-            id="search"
-            placeholder="검색어를 입력해주세요"
-            required
-            class="search-bar"
-          />
-          <button type="submit">
-            <img src="./imgs/Icon/Search.png" alt="돋보기 아이콘" />
-          </button>
-          <div class="">
-            <a href=""><img src="./imgs/header/Location.png" alt="" /></a>
-            <a href=""><img src="./imgs/header/Heart.png" alt="" /></a>
-            <a href=""><img src="./imgs/header/Cart-1.png" alt="" /></a>
-          </div>
+        <div class="sub-menu">
+          <a
+            href="/"
+            class="sub-menu__map sub-menu__item"
+            aria-label="지도맵 열기"
+          ></a>
+          <a
+            href="/"
+            class="sub-menu__like sub-menu__item"
+            aria-label="좋아요 리스트 열기"
+          ></a>
+          <a
+            href="/"
+            class="sub-menu__wish sub-menu__item"
+            aria-label="장바구니 메뉴 열기"
+          ></a>
         </div>
+      </div>
 
-        <div class="bottom">
-          <nav>
-            <ul class="navbar">
-              <li class="menu__item">
-                <a href="" class="navbar__menu">카테고리</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="navbar__menu">신상품</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="navbar__menu">베스트</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="navbar__menu">알뜰쇼핑</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="navbar__menu">특가/혜택</a>
-              </li>
-            </ul>
-          </nav>
+      <ul class="member">
+        <!-- 가상요소 | 추가 필요 -->
+        <li class="member__item"><a href="/">회원가입</a></li>
+        <li class="member__item"><a href="/">로그인</a></li>
+        <li class="member__item"><a href="/">고객센터</a></li>
+      </ul>
 
-          <div class="">
-            <a href=""><img src="./imgs/header/header_notice.png" alt="" /></a>
-          </div>
+      <div class="menu-container">
+        <div class="category">
+          <img src="./imgs/header/hanburger_black.png" alt="카테고리 펼치기" />
+          <span class="category__text">카테고리</span>
         </div>
+        <ul class="menu">
+          <li class="menu__item"><a href="/">신상품</a></li>
+          <li class="menu__item"><a href="/">베스트</a></li>
+          <li class="menu__item"><a href="/">알뜰쇼핑</a></li>
+          <li class="menu__item"><a href="/">특가/혜택</a></li>
+        </ul>
+        <a href="#">
+          <img src="./imgs/header/header_notice.png" alt="샛별·낮 배송안내" />
+        </a>
       </div>
     </header>
   </body>
 </html>
+>>>>>>> a8268863ba08d0a5e384235a4c28802aa1c22eb6
