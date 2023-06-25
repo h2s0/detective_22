@@ -10,6 +10,110 @@
 </head>
 
 <body>
+
+    <h2 class="register-title">회원가입</h2>
+    <span><sup class="accent-primary">*</sup>필수입력사항</span>
     
+    <hr />
+    
+    <form action="#" method="post" name="register">
+        <fieldset>
+            <legend>회원가입 정보 입력</legend>
+            <div class="id">
+                <label for="id">아이디<sup class="accent-primary">*</sup></label>
+                <input type="text" id="id" name="id" placeholder="아이디를 입력해주세요" required>
+                <input type="button" id="id" class="duplicate-check" value="중복확인">
+            </div>
+            <div class="password">
+                <label for="password">비밀번호<sup class="accent-primary">*</sup></label>
+                <input type="text" id="password" name="password" placeholder="비밀번호를 입력해주세요" required>
+            </div>
+            <div class="password-confirm">
+                <label for="password-confirm">비밀번호 확인<sup class="accent-primary">*</sup></label>
+                <input type="text" id="password-confirm" name="password-confirm" placeholder="비밀번호를 입력해주세요" required>
+            </div>
+            <div class="email">
+                <label for="email">이메일<sup class="accent-primary">*</sup></label>
+                <input type="email" id="email" name="email" placeholder="예) marketkarly@karly.com" required>
+                <input type="button" id="id" class="duplicate-check" value="중복확인">
+            </div>
+            <div class="phone-number">
+                <label for="phone-number">휴대폰<sup class="accent-primary">*</sup></label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="숫자만 입력해주세요" required>
+            </div>
+            <div class="address">
+                <label for="address">주소<sup class="accent-primary">*</sup></label>
+                <input type="button" value="주소 검색" onclick="">
+                <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+            </div>
+            <div class="gender">
+                <label for="gender">성별</label>
+    
+                <input type="radio" name="gender" id="gender__male" value="male">
+                <label for="gender__male">남자</label>
+                <input type="radio" name="gender" id="gender__female" value="female">
+                <label for="gender__female">여자</label>
+                <input type="radio" name="gender" id="gender__none" value="none">
+                <label for="gender__none">선택안함</label>
+            </div>
+            <div class="bod">
+                <label for="bod">생년월일</label>
+                <input type="text" id="bod" name="bod" placeholder="YYYY / MM / DD" pattern="" maxlength="8">
+            </div>
+            <div class="additional-info">
+                <label for="additional-info">추가입력 사항</label>
+    
+                <input type="checkbox" name="additional-info" id="recommened-id" value="id">
+                <label for="recommened-id">친구초대 추천인 아이디</label>
+                <input type="checkbox" name="additional-info" id="event" value="event-name">
+                <label for="event">참여 이벤트명</label>
+            </div>
+    <hr />
+            <div class="agree">
+                <label for="agree">이용약관동의<sup class="accent-primary">*</sup></label>
+    
+                <input type="checkbox" name="agree" id="agree-all">
+                <label for="agree-all">전체 동의합니다.</label>
+                <span>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+
+                <input type="checkbox" name="agree" value="1" required/>
+                <label for="agree">이용약관 동의 (필수)</label>
+                <a href="#" class="accent-primary">
+                    약관보기
+                    <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                </a>
+                
+                <input type="checkbox" name="agree" value="2" required/>
+                <label for="agree">개인정보 수집·이용 동의 (필수)</label>
+                <a href="#" class="accent-primary">
+                    약관보기
+                    <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                </a>
+
+                <input type="checkbox" name="agree" value="3"/>
+                <label for="agree">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
+                <a href="#" class="accent-primary">
+                    약관보기
+                    <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                </a>
+
+                <input type="checkbox" name="agree" value="4" required/>
+                <label for="agree">본인은 만 14세 이상입니다. (필수)
+                    
+                </label>
+                <a href="#" class="accent-primary">
+                    약관보기
+                    <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                </a>
+                
+            </div>
+    
+            <!-- 가입하기 버튼 -->
+            <input type="submit" value="가입하기" class="submit-button">
+        </fieldset>
+    
+    </form>
+    
+
 </body>
 </html>
