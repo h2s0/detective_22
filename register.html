@@ -6,138 +6,163 @@
 
     <title>register</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-    <h2 class="register-title">회원가입</h2>
-    <span class="guide"><sup class="accent-new">*</sup>필수입력사항</span>
+        <h2 class="register-title">회원가입</h2>
+        <span class="guide"><sup class="accent-new">*</sup>필수입력사항</span>
+
     
-    <hr />
-    
-    <form action="#" method="post" name="register">
-        <fieldset>
+    <form action="#" method="post" name="register" class="register-form">
+        <fieldset class="register-info">
             <legend>회원가입 정보 입력</legend>
 
             <!-- 아이디 -->
-            <div class="user-id">
-                <label for="user-id">아이디<sup class="accent-new">*</sup></label>
-                <input type="text" id="user-id" name="user-id" placeholder="아이디를 입력해주세요" required>
-                <input type="button" class="duplicate-check accent-primary" value="중복확인" onclick="">
+            <div class="user-id line-wrapper3">
+                <label for="user-id" class="labels">아이디<sup class="accent-new">*</sup></label>
+                <input type="text" id="user-id" name="user-id" placeholder="아이디를 입력해주세요" required class="input-box">
+                <input type="button" class="form__button accent-primary" value="중복확인" onclick="">
             </div>
 
             <!-- 비밀번호 -->
-            <div class="password">
-                <label for="password">비밀번호<sup class="accent-new">*</sup></label>
-                <input type="text" id="password" name="password" placeholder="비밀번호를 입력해주세요" required>
+            <div class="password line-wrapper2">
+                <label for="password" class="labels">비밀번호<sup class="accent-new">*</sup></label>
+                <input type="text" id="password" name="password" placeholder="비밀번호를 입력해주세요" required class="input-box">
             </div>
 
             <!-- 비밀번호 확인 -->
-            <div class="password-confirm">
-                <label for="password-confirm">비밀번호 확인<sup class="accent-new">*</sup></label>
-                <input type="text" id="password-confirm" name="password-confirm" placeholder="비밀번호를 입력해주세요" required>
+            <div class="password-confirm line-wrapper2">
+                <label for="password-confirm" class="labels">비밀번호 확인<sup class="accent-new">*</sup></label>
+                <input type="text" id="password-confirm" name="password-confirm" placeholder="비밀번호를 입력해주세요" required class="input-box">
             </div>
 
             <!-- 이메일 -->
-            <div class="email">
-                <label for="email">이메일<sup class="accent-new">*</sup></label>
-                <input type="email" id="email" name="email" placeholder="예&#41; marketkarly@karly.com" required>
-                <input type="button" class="duplicate-check accent-primary" value="중복확인" onclick="">
+            <div class="email line-wrapper3">
+                <label for="email" class="labels">이메일<sup class="accent-new">*</sup></label>
+                <input type="email" id="email" name="email" placeholder="예&#41; marketkarly@karly.com" required class="input-box">
+                <input type="button" class="form__button accent-primary" value="중복확인" onclick="">
             </div>
 
             <!-- 휴대폰 번호 -->
-            <div class="phone-number">
-                <label for="phone-number">휴대폰<sup class="accent-new">*</sup></label>
-                <input type="text" id="phone-number" name="phone-number" placeholder="숫자만 입력해주세요" required>
-                <input type="button" class="duplicate-check accent-primary" value="인증번호 받기" onclick="">
+            <div class="phone-number line-wrapper3">
+                <label for="phone-number" class="labels">휴대폰<sup class="accent-new">*</sup></label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="숫자만 입력해주세요" required class="input-box">
+                <input type="button" class="form__button accent-primary" value="인증번호 받기" onclick="">
             </div>
 
             <!-- 주소 -->
-            <div class="address">
-                <label for="address">주소<sup class="accent-new">*</sup></label>
-                <input type="button" value="주소 검색" onclick="" class="accent-primary">
-                <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+            <div class="address line-wrapper2">
+                <label for="address" class="labels">주소<sup class="accent-new">*</sup></label>
+                <div class="address__search">
+                    <input type="button" value="주소 검색" onclick="" class="form__address-button accent-primary" id="address">
+                    <span class="address__text">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                </div>
             </div>
 
             <!-- 성별 -->
-            <div class="gender">
-                <input type="radio" name="gender" id="gender__male" value="male">
-                <label for="gender__male">남자</label>
-                <input type="radio" name="gender" id="gender__female" value="female">
-                <label for="gender__female">여자</label>
-                <input type="radio" name="gender" id="gender__none" value="none">
-                <label for="gender__none">선택안함</label>
+            <div class="gender line-wrapper-center">
+                <div class="labels">성별</div>
+                <div class="gender-wrapper">
+                    <div class="button-text">
+                        <input type="radio" name="gender" id="gender__male" value="male">
+                        <label for="gender__male">남자</label>
+                    </div>
+                    <div class="button-text">
+                        <input type="radio" name="gender" id="gender__female" value="female">
+                        <label for="gender__female">여자</label>
+                    </div>
+                    <div class="button-text">
+                        <input type="radio" name="gender" id="gender__none" value="none">
+                        <label for="gender__none">선택안함</label>
+                    </div>
+                </div>
             </div>
 
             <!-- 생년월일 -->
-            <div class="bod">
-                <label for="bod">생년월일</label>
-                <input type="text" id="bod" name="bod" placeholder="YYYY / MM / DD" pattern="" maxlength="8">
+            <div class="bod line-wrapper2">
+                <label for="bod" class="labels">생년월일</label>
+                <input type="text" id="bod" name="bod" placeholder="YYYY / MM / DD" pattern="" maxlength="8" class="input-box">
             </div>
 
             <!-- 추가입력사항 -->
-            <div class="additional-info">
-                <label for="additional-info">추가입력 사항</label>
-    
-                <input type="checkbox" name="additional-info" id="recommened-id" value="id">
-                <label for="recommened-id">친구초대 추천인 아이디</label>
-                <input type="checkbox" name="additional-info" id="event" value="event-name">
-                <label for="event">참여 이벤트명</label>
+            <div class="additional-info line-wrapper-center">
+                <div class="labels">추가입력 사항</div>
+                <div class="add-info-wrapper">
+                    <div class="add-info-list button-text">
+                        <input type="checkbox" name="additional-info" id="recommened-id" value="id" class="add-button">
+                        <label for="recommened-id">친구초대 추천인 아이디</label>
+                    </div>
+                    <div class="add-info-list button-text">
+                        <input type="checkbox" name="additional-info" id="event" value="event-name" class="add-button">
+                        <label for="event">참여 이벤트명</label>
+                    </div>
+                </div>
             </div>
-    <hr />
-            <!-- 이용약관 동의-->
-            <div class="agree">
-                <label for="agree">이용약관동의<sup class="accent-new">*</sup></label>
-    
-                <div>
-                    <input type="checkbox" name="agree" id="agree-all">
-                    <label for="agree-all">전체 동의합니다.</label>
-                    <span>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="agree" required/>
-                    <label for="agree">이용약관 동의 (필수)</label>
-                    <a href="#" class="accent-primary">
-                        약관보기
-                        <img src="./../imgs/Icon/Arrow-1.png" alt="" />
-                    </a>
-                </div>
-                
-                <div>
-                    <input type="checkbox" name="agree" required/>
-                    <label for="agree">개인정보 수집·이용 동의 (필수)</label>
-                    <a href="#" class="accent-primary">
-                        약관보기
-                        <img src="./../imgs/Icon/Arrow-1.png" alt="" />
-                    </a>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="agree"/>
-                    <label for="agree">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
-                    <a href="#" class="accent-primary">
-                        약관보기
-                        <img src="./../imgs/Icon/Arrow-1.png" alt="" />
-                    </a>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="agree" required/>
-                    <label for="agree">본인은 만 14세 이상입니다. (필수)</label>
-                    <a href="#" class="accent-primary">
-                        약관보기
-                        <img src="./../imgs/Icon/Arrow-1.png" alt="" />
-                    </a>
-                </div>
-                
-            </div>
-    
-            <!-- 가입하기 버튼 -->
-            <input type="submit" value="가입하기" class="submit-button">
         </fieldset>
+        <fieldset>
+            <!-- 이용약관 동의-->
+            <div class="agree line-wrapper">
+                <div class="labels">이용약관동의<sup class="accent-new">*</sup></div>
     
+                <div>
+                    <div class="agree-list1">
+                        <div class="agree-all__text button-text">
+                            <input type="checkbox" name="agree" id="agree-all" class="agree-button">
+                            <label for="agree-all">전체 동의합니다.</label>
+                        </div>
+                        <span class="agree-all__description">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+                    </div>
+                    <div class="agree-list2">
+                        <div class="button-text">
+                            <input type="checkbox" name="agree" id="agree1" required class="agree-button"/>
+                            <label for="agree1">이용약관 동의 (필수)</label>
+                        </div>
+                        <a href="#" class="accent-primary">
+                            약관보기
+                            <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                        </a>
+                    </div>
+                    
+                    <div class="agree-list2">
+                        <div class="button-text">
+                            <input type="checkbox" name="agree" id="agree2" required class="agree-button"/>
+                            <label for="agree2">개인정보 수집·이용 동의 (필수)</label>
+                        </div>
+                        <a href="#" class="accent-primary">
+                            약관보기
+                            <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="agree-list2">
+                        <div class="button-text">
+                            <input type="checkbox" name="agree" id="agree3" class="agree-button"/>
+                            <label for="agree3">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</label>
+                        </div>
+                        <a href="#" class="accent-primary">
+                            약관보기
+                            <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="agree-list2">
+                        <div class="button-text">
+                            <input type="checkbox" name="agree" id="agree4" required class="agree-button"/>
+                            <label for="agree4">본인은 만 14세 이상입니다. (필수)</label>
+                        </div>
+                        <a href="#" class="accent-primary">
+                            약관보기
+                            <img src="./../imgs/Icon/Arrow-1.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </fieldset>
+        <!-- 가입하기 버튼 -->
+        <div class="submit-button-wrapper">
+            <input type="submit" value="가입하기" class="submit-button">
+        </div>
     </form>
     
 
