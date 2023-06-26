@@ -4,9 +4,7 @@
 /* @import url(./../css/reset.css); */
 @import url(./../css/theme.css);
 
-.font-point{
-  font-weight: bold;
-}
+
 
 
 /* 전체 영역 */
@@ -16,26 +14,24 @@
   margin-right: auto;
   width: 1050px;
   position: relative;
-  font-size: 16px;
+  font-size: var(--label-medium);
 }
 
 
 /* 헤드역역 */
 h2 {
-  background: yellow;
   margin-top: 48px;
   margin-bottom: 48px;
   text-align: center;
   font-size: 21.3px;
+  text-shadow: ;
 }
 
 /* 리스트영역 */
 .product-list{
-  background: pink;
   position: absolute;
   left: 0;
   width: 267px;
-  padding-right: 47px;
 }
 
 .product-list__title{
@@ -58,12 +54,19 @@ h2 {
   position: absolute;
   right: 0;
   top: 0;
+  color: var(--gray-300);
+  font: 600 10px/160%;
+  border: 0;
+  background:none;
+  top: 14px;
 }
 
 .product-list summary{
   width: 220px;
   height: 52px;
   align-items: center;
+  color: var(--content);
+  font: var(--label-medium);
 }
 
 .product-list ul{
@@ -73,6 +76,76 @@ h2 {
 
 } 
 
+.product-list__sum summary{
+  line-height: 52px;
+  border-bottom: 1px solid var(--gray-100);
+  list-style: none;
+  display: block;
+  background: url(./image/Arrow-down.svg) no-repeat 100% 50%;
+}
+
+.product-list__sum[open] summary{
+  background-image: url(./image/Arrow.png);
+  
+}
+
+.product-list__sum summary::-webkit-details-marker{
+  display: none;
+}
+
+.product-list__sum li{
+  height: 50px;
+  width: 220px;
+  line-height: 50px;
+  background: url(./image/isChecked=false.svg) no-repeat 0 50%;
+}
+
+.product-list__sum li::after{
+  content: "1";
+  color: var(--gray-300);
+  font: var(--paragraph-small);
+  margin-left: 4px;
+}
+
+.product-list__sum a{
+  text-decoration: none;
+  color: var(--content);
+  font: var(--paragraph-medium);
+  margin-left: 32px;
+}
+
+.product-list__sum li:active {
+  background-image: url(./image/isChecked=true.svg) ;
+}
+
+details .product-list__sum__alpha {
+  display: inline-block;
+  width: 90px;
+  height: 20px;
+  line-height: 30px;
+  padding-top: 5px;
+  margin-left: 68px;
+  color: var(--gray-300);
+  font: var(--label-small);
+  background: url(./image/Arrow-small.svg) no-repeat 100% 50%;
+}
+
+/* .product-list__category summary{
+  list-style: none;
+  display: block;
+  background: yellow url(./image/Arrow-down.svg) no-repeat 100% 50%;
+}
+
+.product-list__category[open] summary{
+  background-image: url(./image/Arrow.png);
+}
+
+.product-list__category summary::-webkit-details-marker{
+  display: none;
+} */
+
+
+
 
 
 /* 컨테이너 영역 */
@@ -80,8 +153,11 @@ h2 {
   position: absolute;
   right: 0;
   width: 783px;
+  height: 2923px;
 }
-
+.product-container__view a{
+  text-decoration: none;
+}
 
 .product-container__top{
   position: relative;
@@ -90,6 +166,8 @@ h2 {
 
 .product-container__top__sum{
   position: absolute;
+  color: var(--content);
+  font: var(--label-medium);
 }
 
 .product-container__top__list{
@@ -98,9 +176,19 @@ h2 {
   display: flex;
 }
 
+.product-container__top__list a{
+  text-decoration: none;
+  color: var(--gray-300);
+  font: var(--label-medium);
+}
+
 .product-container__top__list__title{
-  background: url(./image/Frame.png) no-repeat right;
+  background: url(./image/Frame.png) no-repeat 100% -10%;
   width: 60px;
+  color: var(--content);
+  font: 600 16px/150%;
+  line-height: 24px;
+
 
 }
 
@@ -109,12 +197,12 @@ h2 {
   padding: 0;
 }
 
-.product-container__top__list li::before{
+.product-container__top__list a::before{
+  display: inline-block;
   content: " ";
-  width: 1px;
   height: 10px;
   border: 1px solid #a6a6a6;
-  background: #a6a6a6;
+  background: var(--gray-300);
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -129,16 +217,51 @@ h2 {
 
 
 
-.product-container__view{
-  background: skyblue;
-  
+.product-container__view__total{
+  display: flex;
+  flex-direction: column;
 }
 
-.product-container__view-box__1{
+.product-container__view{
+  display: flex;
+  gap: 18px;
+}
+
+
+
+.product-container__view-box__1 {
   width: 249px;
   height: 538px;
-  background: greenyellow;
+  position: relative;
+}
+.product-container__view-box__2 {
+  width: 249px;
+  height: 538px;
+  position: relative;
+}
+.product-container__view-box__3{
+  width: 249px;
+  height: 538px;
+  position: relative;
+}
 
+
+.product-container__view-box__img{
+  width: 249px;
+  display: block;
+}
+
+.product-container__view-box__img__wish{
+  width: 45px;
+  height: 45px;
+  background: url(./image/Group.svg);
+  position: absolute;
+  top: 258px;
+  right: 15px;
+}
+
+.product-container__view-box__img__wish{
+  float: right;
 }
 
 .product-container__view-box__text{
@@ -152,35 +275,57 @@ h2 {
   color: var(--gray-400);
   font: var(--label-small);
 }
+.product-container__view-box__text__name{
+  color: var(--content);
+  font: var(--paragraph-medium);
+}
+
+.product-container__view-box__text__dis {
+  color: var(--accent-orange);
+  font: var(--label-large);
+}
+
+.product-container__view-box__text__price{
+  color: var(--content, #333333);
+  font: var(--label-large);
+}
+.product-container__view-box__text__del{
+  color: var(--gray-400);
+  font: var(--paragraph-small);
+  text-decoration: line-through;
+}
+
 .product-container__view-box__text__ex{
   color: var(--gray-400);
   font: var(--label-small);
 }
 
-/* summary{
-  list-style: none;
+
+.numbering{
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.numbering-box{
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--gray-100);
+  margin-left: -1px;
+  text-align: center;
+  line-height: 34px;
+  font: 400 12px;
+  padding: 6px 4px 4px 4px;
+}
+
+
+
+.numbering-box a{
+  text-decoration: none;
+  color: var(--content);
   display: block;
-  background: yellow url(./image/Arrow-down.svg) no-repeat 100% 50%;
+
 }
 
-[open]summary{
-  background-image: url(./image/Arrow.png);
-}
 
-summary::-webkit-details-marker{
-  display: none;
-} */
 
-.product-list__category summary{
-  list-style: none;
-  display: block;
-  background: yellow url(./image/Arrow-down.svg) no-repeat 100% 50%;
-}
-
-.product-list__category[open] summary{
-  background-image: url(./image/Arrow.png);
-}
-
-.product-list__category summary::-webkit-details-marker{
-  display: none;
-}
