@@ -140,6 +140,10 @@ hr{
     display: flex;
     gap: 8px;
     align-items: flex-start;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
 }
 
 .certi-text{
