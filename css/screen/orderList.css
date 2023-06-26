@@ -130,6 +130,7 @@ body {
   border: 1.5px solid var(--primary-color);
   border-radius: 4px;
   margin-top: var(--commonCash-margin);
+  cursor: pointer;
 }
 
 /* 상품긍액 캐시 영역 */

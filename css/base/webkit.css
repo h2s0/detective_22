@@ -1,5 +1,9 @@
-/* 브라우저에서 제공되는 검색창 디자인을 제거합니다 */
-input::-webkit-search-decoration,
+브라우저에서
+  제공되는
+  검색창
+  디자인을
+  제거합니다
+  input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-decoration,
 input::-webkit-search-results-button {
