@@ -1,0 +1,33 @@
+@import url(./../css/a11y.css);
+@import url(./../css/base.css);
+@import url(./../css/normalize.css);
+@import url(./../css/reset.css);
+@import url(./../css/theme.css);
+
+body{
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--content-color);
+}
+
+.accent-primary{
+    color: var(--primary-color);
+}
+
+.accent-new{
+    color: var(--new-color);
+    font-weight: bold;
+}
+
+.register-title{
+    text-align: center;
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.guide{
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--text-xs);
+}
