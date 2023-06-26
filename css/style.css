@@ -13,3 +13,4 @@
 
 /* screen css */
 @import url(./screen/orderList.css);
+@import url(../main/main.css);
