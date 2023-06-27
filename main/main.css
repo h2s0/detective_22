@@ -31,6 +31,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+  max-height: 600px;
 }
 
 /* .container {
@@ -53,6 +54,7 @@ body {
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s;
+  cursor: pointer;
 }
 
 .container img.arrow-left {
@@ -162,14 +164,8 @@ body {
 }
 
 .recent {
-  position: fixed;
-  right: 0;
-  top: 480px;
-}
-
-.recent {
   box-sizing: border-box;
-  width: 80px;
+  width: 100px;
   margin: 30px;
   display: flex;
   flex-direction: column;
@@ -179,6 +175,10 @@ body {
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-weight: 500;
+  position: sticky;
+  right: 0;
+  top: 0px;
+  padding: 8px;
 }
 @media (max-width: 1200px) {
   .recent {
@@ -186,6 +186,11 @@ body {
   }
 }
 .recent_text {
-  font-size: 10px;
-  margin: 10px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.recent_slide {
+  width: 100%;
+  height: 100%;
 }
