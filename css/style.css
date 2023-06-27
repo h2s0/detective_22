@@ -10,7 +10,8 @@
 /* components css */
 @import url(./components/header.css);
 @import url(./components/order-checkBox.css);
+@import url(./components/footer.css);
 
 /* screen css */
 @import url(./screen/orderList.css);
-@import url(../main/main.css);
+@import url(./screen/register.css);
