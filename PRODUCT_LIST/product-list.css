@@ -24,7 +24,6 @@ h2 {
   margin-bottom: 48px;
   text-align: center;
   font-size: 21.3px;
-  text-shadow: ;
 }
 
 /* 리스트영역 */
@@ -101,7 +100,7 @@ h2 {
   position: relative;
 }
 
-.product-list__sum li::after{
+.product-list__sum span::after{
   content: "1";
   color: var(--gray-300);
   font: var(--paragraph-small);
@@ -112,10 +111,7 @@ h2 {
   appearance: none;
   width: 25px;
   height: 25px;
-  border: 0;
-  padding: 0;
   background: url(./image/isChecked=false.svg)no-repeat;
-  display: inline-block;
   align-content: center;
   position: absolute;
   top: 10px;
@@ -127,11 +123,13 @@ h2 {
 
 
 
-.product-list__sum a{
+.product-list__sum span{
   text-decoration: none;
   color: var(--content);
   font: var(--paragraph-medium);
   margin-left: 32px;
+  display: block;
+  padding-top: 10px;
 }
 
 /* .product-list__sum li:active {
@@ -140,6 +138,7 @@ h2 {
 
 details .product-list__sum__alpha {
   display: inline-block;
+  text-decoration-line: none;
   width: 90px;
   height: 20px;
   line-height: 30px;
