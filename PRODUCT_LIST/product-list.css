@@ -326,6 +326,7 @@ details .product-list__sum__alpha {
   display: flex;
   margin-top: 60px;
   justify-content: center;
+  font:  12px "Inter", sans-serif;
 }
 
 .numbering-box{
